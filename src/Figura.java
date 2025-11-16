@@ -17,6 +17,14 @@ public class Figura { // Classe Originator
     public void mudarCor(String novaCor) {
         this.cor = novaCor;
     }
+    public Memento criarMemento() {
+        return new Memento(cor, posicaoX, posicaoY);
+    }
+    public void restaurar(Memento memento) {
+        this.cor = memento.getCor();
+        this.posicaoX = memento.getPosicaoX();
+        this.posicaoY = memento.getPosicaoY();
+    }
 
 
 
