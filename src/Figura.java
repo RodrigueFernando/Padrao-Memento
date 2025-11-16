@@ -26,6 +26,13 @@ public class Figura { // Classe Originator
         this.posicaoY = memento.getPosicaoY();
     }
 
+    public void mostrar() {
+        System.out.println(
+                "Figura [cor=" + cor +
+                        ", x=" + posicaoX +
+                        ", y=" + posicaoY + "]"
+        );
+    }
 
 
 }
